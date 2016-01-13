@@ -1,6 +1,5 @@
 @font-face {
     font-family: 'Default';
-    font-weight: 700;
     src: url('../font/montserrat-ultralight-webfont.eot');
     src: url('../font/montserrat-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
          url('../font/montserrat-ultralight-webfont.woff') format('woff'),
@@ -34,12 +33,13 @@ body {
 
 .header img {
     padding-top: 15px;
+    min-width: 400px;
+    max-width: 100%;
 }
 
 .header h1 {
     margin: 0;
     padding: 15px 0;
-    font-size: 40px;
     opacity: 0.7;
  }
 
