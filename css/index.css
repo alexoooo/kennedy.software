@@ -33,8 +33,7 @@ body {
 
 .header img {
     padding-top: 15px;
-    min-width: 400px;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .header h1 {
