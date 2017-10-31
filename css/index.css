@@ -6,81 +6,72 @@
          url('../font/montserrat-ultralight-webfont.ttf')  format('truetype'),
          url('../font/montserrat-ultralight-webfont.svg#svgFontName') format('svg');
 }
+:root {
+    --header-height: 64px;
+    --header-margin-roof-ceil: 8px;
+    --header-margin-sides: 64px;
+    --background-color: #F2F2F2;
+    --text-color: #4D4D4D;
+}
+
+body, html, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
 
 html {
     width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
     font-family: 'Default', sans-serif;
-    color: #000;
-    background-color: #fff;
-}
-
-body {
-    margin: 0 auto;
-    padding: 0;
-    display: block;
-    max-width: 90%;
-}
-
-h2 {
-    padding-bottom: 10px;
-    margin: 0;
-}
-
-h3 {
-    padding: 0;
-    margin: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 /* Header */
-.header {
+.kss-header {
+    background-color: var(--background-color);
     width: 100%;
-    padding: 15px 0 20px 0;
-    display: table;
+    max-height: var(--header-height);
+}
+.kss-header-row {
+    background-image: url('../img/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin: var(--header-margin-roof-ceil) var(--header-margin-sides) var(--header-margin-roof-ceil) var(--header-margin-sides);
+    max-height: calc(var(--header-height) - var(--header-margin-roof-ceil) * 2);
+    padding: 0;
+}
+.kss-header-links {
+    margin-right: -48px !important;
 }
 
-.header img {
-    display: inline-block;
-    height: auto;
-    vertical-align: middle;
+/* Content */
+.kss-content {
+    min-height: 95%;
 }
-
-.logo {
-    max-width: 70%;
+.kss-card-wide {
+    width: 100%;
+    min-height: 130px;
 }
-
-.social {
-    max-width: 5%;
-    padding-left: 10px;
-}
-
-/* Rows */
-.row {
-    padding-top: 20px;
-}
-
-.row h2 {
-    font-family: 'serif';
-    font-size: 16px;
+.kss-card-title {
+    padding: 16px 16px 0 16px;
     opacity: 0.7;
 }
 
-.row h3 {
-    font-size: 15px;
-    opacity: 0.6;
-    display:inline-block;
-    padding: 0 15px 0 0;
-}
-
 /* Footer */
-.footer {
-    padding-top: 30px;
-    text-align: center;
+.kss-footer {
+    padding: 32px;
+    min-height: 128px;
 }
 
-.footer p {
-    opacity: 0.6;
+.kss-social {
+    padding: 16px 0 16px 0;
+}
+.kss-social-i {
+    color: var(--background-color);
+    padding-right: 32px;
+    margin-bottom: 24px;
 }
