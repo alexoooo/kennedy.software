@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'Default';
-    src: url('../font/montserrat-ultralight-webfont.eot');
-    src: url('../font/montserrat-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/montserrat-ultralight-webfont.woff') format('woff'),
-         url('../font/montserrat-ultralight-webfont.ttf')  format('truetype'),
-         url('../font/montserrat-ultralight-webfont.svg#svgFontName') format('svg');
-}
 :root {
     --header-height: 64px;
     --header-margin-roof-ceil: 8px;
@@ -24,7 +16,6 @@ html {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    font-family: 'Default', sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
 }
@@ -51,20 +42,65 @@ html {
 /* Content */
 .kss-content {
     min-height: 95%;
+    max-width: 1024px;
 }
 .kss-card-wide {
     width: 100%;
     min-height: 130px;
 }
 .kss-card-title {
+
+}
+.kss-card-service-title {
+    height: 200px;
+}
+.kss-card-create {
+    background: url('../img/create.png') center / cover;
+}
+.kss-card-grow {
+    background: url('../img/grow.png') center / cover;
+}
+.kss-card-mentor {
+    background: url('../img/mentor.png') center / cover;
+}
+.kss-card-title {
     padding: 16px 16px 0 16px;
     opacity: 0.7;
+}
+/* Form */
+input[type="email"],
+textarea {
+    font: inherit;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(215,215,215,.1);
+    padding: 8px 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    font-weight: 600;
+    color:rgba(20, 20, 20, 0.7);
+    background-color: rgba(215,215,215,.3);
+    border-radius: 4px;
+    padding: 8px 15px;
+    width: 100%;
+    border: 1px solid rgba(215,215,215,.1);
+    cursor: pointer;
+}
+textarea {
+    resize: none;
 }
 
 /* Footer */
 .kss-footer {
     padding: 32px;
-    min-height: 128px;
+    min-height: 112px;
+}
+
+.kss-link-list {
+    margin-bottom: 16px;
 }
 
 .kss-social {

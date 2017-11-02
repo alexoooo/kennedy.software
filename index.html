@@ -24,21 +24,61 @@
                     <nav class="mdl-navigation mdl-layout--large-screen-only kss-header-links">
                         <a class="mdl-navigation__link" href="#about">About</a>
                         <a class="mdl-navigation__link" href="#services">Services</a>
-                        <a class="mdl-navigation__link" href="#content">Contact</a>
+                        <a class="mdl-navigation__link" href="#contact">Contact</a>
                     </nav>
                 </div>
             </header>
             <div class="mdl-layout__drawer">
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="#home">Home</a>
-                    <a class="mdl-navigation__link" href="#about">About</a>
-                    <a class="mdl-navigation__link" href="#services">Services</a>
-                    <a class="mdl-navigation__link" href="#content">Contact</a>
+                    <a class="mdl-navigation__link" onclick="return toggleDrawer();" href="#about">About</a>
+                    <a class="mdl-navigation__link" onclick="return toggleDrawer();" href="#services">Services</a>
+                    <a class="mdl-navigation__link" onclick="return toggleDrawer();" href="#contact">Contact</a>
                 </nav>
             </div>
             <main class="mdl-layout__content">
                 <div class="kss-content mdl-grid">
-                    <div class="mdl-cell mdl-cell--12-col">
+                    <div id="about" class="mdl-cell mdl-cell--12-col">
+                        <div class="kss-card-wide mdl-card mdl-shadow--2dp">
+                            <div class="kss-card-title mdl-card__title">
+                                <h2 class="mdl-card__title-text">About</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Kennedy Software Solutions is a provider of IT consulting services. Our experts utilize
+                                tested and proven software solutions, with a track record of success.
+                            </div>
+                        </div>
+                    </div>
+                    <div id="services" class="mdl-cell mdl-cell--4-col">
+                        <div class="kss-card-wide mdl-card mdl-shadow--2dp">
+                            <div class="kss-card-create kss-card-service-title kss-card-title mdl-card__title">
+                                <h2 class="mdl-card__title-text">Create</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Bring your fresh product ideas to life.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="kss-card-wide mdl-card mdl-shadow--2dp">
+                            <div class="kss-card-grow kss-card-service-title kss-card-title mdl-card__title">
+                                <h2 class="mdl-card__title-text">Grow</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Expand and integrate with an existing product.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="kss-card-wide mdl-card mdl-shadow--2dp">
+                            <div class="kss-card-mentor kss-card-service-title kss-card-title mdl-card__title">
+                                <h2 class="mdl-card__title-text">Mentor</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Apply modern best practices to a project.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
                         <div class="kss-card-wide mdl-card mdl-shadow--2dp">
                             <div class="kss-card-title mdl-card__title">
                                 <h2 class="mdl-card__title-text">code</h2>
@@ -59,7 +99,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mdl-cell mdl-cell--12-col">
+                    <div class="mdl-cell mdl-cell--4-col">
                         <div class="kss-card-wide mdl-card mdl-shadow--2dp">
                             <div class="kss-card-title mdl-card__title">
                                 <h2 class="mdl-card__title-text">using</h2>
@@ -86,7 +126,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mdl-cell mdl-cell--12-col">
+                    <div class="mdl-cell mdl-cell--4-col">
                         <div class="kss-card-wide mdl-card mdl-shadow--2dp">
                             <div class="kss-card-title mdl-card__title">
                                 <h2 class="mdl-card__title-text">with</h2>
@@ -103,19 +143,37 @@
                             </div>
                         </div>
                     </div>
+                    <div id="contact" class="mdl-cell mdl-cell--12-col">
+                        <div class="kss-card-wide mdl-card mdl-shadow--2dp">
+                            <div class="kss-card-title mdl-card__title">
+                                <h2 class="mdl-card__title-text">Contact</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <form action="//formspree.io/contact@kennedy.software"
+                                      method="POST">
+                                    <input type="email" name="_replyto" placeholder="Your email">
+                                    <input type="hidden" name="_next" value="https://kennedy.software" />
+                                    <input type="hidden" name="_subject" value="Web contact" />
+                                    <textarea name="content" rows="8" placeholder="Message"></textarea>
+                                    <input type="submit" value="Send">
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
             <footer class="kss-footer mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section">
                     <div class="mdl-logo">&copy; Kennedy Software Solutions Inc. 2017</div>
-                    <ul class="mdl-mini-footer__link-list">
+                    <ul class="kss-link-list mdl-mini-footer__link-list">
                         <li><a class="list-group-item" href="#home"><i class="zmdi zmdi-home zmdi-hc-fw"></i>Home</a></li>
                         <li><a class="list-group-item" href="#about"><i class="zmdi zmdi-account-add zmdi-hc-fw"></i>About</a></li>
                         <li><a class="list-group-item" href="#services"><i class="zmdi zmdi-dns zmdi-hc-fw"></i>Services</a></li>
                         <li><a class="list-group-item" href="#contact"><i class="zmdi zmdi-email zmdi-hc-fw"></i>Contact</a></li>
                     </ul>
                 </div>
-                <div class="mdl-mini-footer__right-section kss-social">
+                <div class="mdl-mini-footer__right-section">
                     <a class="kss-social-a" target="_blank" href="https://ca.linkedin.com/in/kennedyms"><i class="kss-social-i zmdi zmdi-linkedin zmdi-hc-2x"></i></a>
                     <a class="kss-social-a" target="_blank" href="https://github.com/ksean"><i class="kss-social-i zmdi zmdi-github zmdi-hc-2x"></i></a>
                     <a class="kss-social-a" target="_blank" href="https://stackoverflow.com/users/2387016/sean-kennedy"><i class="kss-social-i zmdi zmdi-stackoverflow zmdi-hc-2x"></i></a>
@@ -127,6 +185,11 @@
         <script async src="https://code.getmdl.io/1.3.0/material.min.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35683139-1"></script>
         <script>
+            var layout = document.querySelector('.mdl-layout');
+            function toggleDrawer() {
+                layout.MaterialLayout.toggleDrawer();
+            }
+
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
