@@ -32,6 +32,10 @@ html {
 .kss-header-row img {
     padding: var(--header-margin-roof-ceil);
 }
+.mdl-layout__drawer-button {
+    padding-top: 10px;
+    padding-left: 5px;
+}
 
 /* Content */
 .kss-content {
