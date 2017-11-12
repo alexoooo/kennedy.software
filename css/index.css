@@ -1,8 +1,6 @@
 :root {
-    --header-height: 64px;
-    --header-margin-roof-ceil: 8px;
-    --header-margin-sides: 64px;
-    --background-color: #F2F2F2;
+    --header-height: 80px;
+    --background-color: #FCFCFC;
     --text-color: #4D4D4D;
 }
 
@@ -27,16 +25,12 @@ html {
     max-height: var(--header-height);
 }
 .kss-header-row {
-    background-image: url('../img/logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-    margin: var(--header-margin-roof-ceil) var(--header-margin-sides) var(--header-margin-roof-ceil) var(--header-margin-sides);
-    max-height: calc(var(--header-height) - var(--header-margin-roof-ceil) * 2);
-    padding: 0;
+    min-height: var(--header-height);
+    margin-right: var(--header-margin-sides);
+
 }
-.kss-header-links {
-    margin-right: -48px !important;
+.kss-header-row img {
+    padding: var(--header-margin-roof-ceil);
 }
 
 /* Content */
@@ -44,15 +38,23 @@ html {
     min-height: 95%;
     max-width: 1024px;
 }
+.kss-card-title h2 {
+    padding: 24px 0;
+    font-size: 32px;
+}
+.kss-card-text h3 {
+    padding: 16px 0;
+    font-size: 24px;
+}
 .kss-card-wide {
     width: 100%;
     min-height: 130px;
-}
-.kss-card-title {
-
+    padding-bottom: 32px;
+    background-color: var(--background-color);
 }
 .kss-card-service-title {
     height: 200px;
+    opacity: 0.6;
 }
 .kss-card-create {
     background: url('../img/create.png') center / cover;
@@ -62,10 +64,6 @@ html {
 }
 .kss-card-mentor {
     background: url('../img/mentor.png') center / cover;
-}
-.kss-card-title {
-    padding: 16px 16px 0 16px;
-    opacity: 0.7;
 }
 /* Form */
 input[type="email"],

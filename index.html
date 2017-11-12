@@ -13,13 +13,14 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-indigo.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-        <link rel="stylesheet" href="css/index.min.css">
+        <link rel="stylesheet" href="css/index.css">
 
     </head>
     <body>
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
             <header class="kss-header mdl-layout__header">
                 <div class="kss-header-row mdl-layout__header-row">
+                    <img src="/img/logo.svg">
                     <div class="mdl-layout-spacer"></div>
                     <nav class="mdl-navigation mdl-layout--large-screen-only kss-header-links">
                         <a class="mdl-navigation__link" href="#about">About</a>
@@ -39,10 +40,10 @@
                 <div class="kss-content mdl-grid">
                     <div id="about" class="mdl-cell mdl-cell--12-col">
                         <div class="kss-card-wide mdl-card">
-                            <div class="kss-card-title mdl-card__title">
-                                <h2 class="mdl-card__title-text">About</h2>
+                            <div class="kss-card-title">
+                                <h2 class="kss-card-title-text"></h2>
                             </div>
-                            <div class="mdl-card__supporting-text">
+                            <div class="kss-card-text">
                                 Kennedy Software Solutions is a provider of IT consulting services. Our experts utilize
                                 tested and proven software solutions, with a track record of success.
                             </div>
@@ -50,41 +51,37 @@
                     </div>
                     <div id="services" class="mdl-cell mdl-cell--4-col">
                         <div class="kss-card-wide mdl-card">
-                            <div class="kss-card-create kss-card-service-title kss-card-title mdl-card__title">
-
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                <h2 class="mdl-card__title-text">Create</h2>
+                            <div class="kss-card-create kss-card-service-title kss-card-title"></div>
+                            <div class="kss-card-text">
+                                <h3 class="kss-card-title-text">Create</h3>
                                 Bring your fresh product ideas to life.
                             </div>
                         </div>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
                         <div class="kss-card-wide mdl-card">
-                            <div class="kss-card-grow kss-card-service-title kss-card-title mdl-card__title">
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                <h2 class="mdl-card__title-text">Extend</h2>
+                            <div class="kss-card-grow kss-card-service-title kss-card-title"></div>
+                            <div class="kss-card-text">
+                                <h3 class="kss-card-title-text">Extend</h3>
                                 Expand and integrate with an existing product.
                             </div>
                         </div>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
                         <div class="kss-card-wide mdl-card">
-                            <div class="kss-card-mentor kss-card-service-title kss-card-title mdl-card__title">
-                            </div>
-                            <div class="mdl-card__supporting-text">
-                                <h2 class="mdl-card__title-text">Mentor</h2>
+                            <div class="kss-card-mentor kss-card-service-title kss-card-title"></div>
+                            <div class="kss-card-text">
+                                <h3 class="kss-card-title-text">Mentor</h3>
                                 Apply modern best practices to a project.
                             </div>
                         </div>
                     </div>
                     <div class="mdl-cell mdl-cell--12-col">
                         <div class="kss-card-wide mdl-card">
-                            <div class="kss-card-title mdl-card__title">
-                                <h2 class="mdl-card__title-text">Technologies</h2>
+                            <div class="kss-card-title">
+                                <h2 class="kss-card-title-text">Technologies</h2>
                             </div>
-                            <div class="mdl-card__supporting-text">
+                            <div class="kss-card-text">
                                 <span class="mdl-chip"><span class="mdl-chip__text">C</span></span>
                                 <span class="mdl-chip"><span class="mdl-chip__text">C++</span></span>
                                 <span class="mdl-chip"><span class="mdl-chip__text">C#</span></span>
@@ -128,10 +125,10 @@
                     </div>
                     <div id="contact" class="mdl-cell mdl-cell--12-col">
                         <div class="kss-card-wide mdl-card">
-                            <div class="kss-card-title mdl-card__title">
-                                <h2 class="mdl-card__title-text">Contact</h2>
+                            <div class="kss-card-title">
+                                <h2 class="kss-card-title-text">Contact</h2>
                             </div>
-                            <div class="mdl-card__supporting-text">
+                            <div class="kss-card-text">
                                 <form action="//formspree.io/contact@kennedy.software"
                                       method="POST">
                                     <input type="email" name="_replyto" placeholder="Your email">
@@ -149,9 +146,9 @@
                     <div class="mdl-mini-footer__left-section">
                         <div class="mdl-logo">&copy; Kennedy Software Solutions Inc. 2017</div>
                         <ul class="kss-link-list mdl-mini-footer__link-list">
-                            <li><a class="list-group-item" href="#about"><i class="zmdi zmdi-account-add zmdi-hc-fw"></i>About</a></li>
-                            <li><a class="list-group-item" href="#services"><i class="zmdi zmdi-dns zmdi-hc-fw"></i>Services</a></li>
-                            <li><a class="list-group-item" href="#contact"><i class="zmdi zmdi-email zmdi-hc-fw"></i>Contact</a></li>
+                            <li><a class="list-group-item" href="#about">About</a></li>
+                            <li><a class="list-group-item" href="#services">Services</a></li>
+                            <li><a class="list-group-item" href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="mdl-mini-footer__right-section">
