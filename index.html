@@ -1,179 +1,128 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Kennedy Software Solutions</title>
-        
-        <!-- Meta declaration -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Kennedy Software Solutions Inc. provides IT professional consulting services to the Greater Toronto Area">
-        <meta name="author" content="Kennedy Software Solutions Inc.">
-        
-        <!-- CSS includes -->
-        <link rel="shortcut icon" type="image/png" href="favico.png">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-indigo.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-        <link rel="stylesheet" href="css/index.min.css">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35683139-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    </head>
-    <body>
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <header class="kss-header mdl-layout__header">
-                <div class="kss-header-row mdl-layout__header-row">
-                    <img src="/img/logo.svg">
-                    <div class="mdl-layout-spacer"></div>
-                    <nav class="mdl-navigation mdl-layout--large-screen-only kss-header-links">
-                        <a class="mdl-navigation__link" href="#about">About</a>
-                        <a class="mdl-navigation__link" href="#services">Services</a>
-                        <a class="mdl-navigation__link" href="#contact">Contact</a>
-                    </nav>
-                </div>
-            </header>
-            <div class="mdl-layout__drawer">
-                <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" onclick="return toggleDrawer();" href="#about">About</a>
-                    <a class="mdl-navigation__link" onclick="return toggleDrawer();" href="#services">Services</a>
-                    <a class="mdl-navigation__link" onclick="return toggleDrawer();" href="#contact">Contact</a>
-                </nav>
-            </div>
-            <main class="mdl-layout__content">
-                <div class="kss-content mdl-grid">
-                    <div id="about" class="mdl-cell mdl-cell--12-col">
-                        <div class="kss-card-wide mdl-card">
-                            <div class="kss-card-title">
-                                <h2 class="kss-card-title-text"></h2>
-                            </div>
-                            <div class="kss-card-text">
-                                Kennedy Software Solutions is a provider of IT consulting services. Our experts utilize
-                                tested and proven software solutions, with a track record of success.
-                            </div>
-                        </div>
-                    </div>
-                    <div id="services" class="mdl-cell mdl-cell--4-col">
-                        <div class="kss-card-wide mdl-card">
-                            <div class="kss-card-create kss-card-service-title kss-card-title"></div>
-                            <div class="kss-card-text">
-                                <h3 class="kss-card-title-text">Create</h3>
-                                Bring your fresh product ideas to life.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col">
-                        <div class="kss-card-wide mdl-card">
-                            <div class="kss-card-grow kss-card-service-title kss-card-title"></div>
-                            <div class="kss-card-text">
-                                <h3 class="kss-card-title-text">Extend</h3>
-                                Expand and integrate with an existing product.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--4-col">
-                        <div class="kss-card-wide mdl-card">
-                            <div class="kss-card-mentor kss-card-service-title kss-card-title"></div>
-                            <div class="kss-card-text">
-                                <h3 class="kss-card-title-text">Mentor</h3>
-                                Apply modern best practices to a project.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mdl-cell mdl-cell--12-col">
-                        <div class="kss-card-wide mdl-card">
-                            <div class="kss-card-title">
-                            </div>
-                            <div class="kss-card-text">
-                                <span class="mdl-chip"><span class="mdl-chip__text">C</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">C++</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">C#</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Go</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Java</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">JavaScript</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">PHP</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Python</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Ruby</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Scala</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">SQL</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">VBA</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">AngularJS</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Ansible</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">AWS</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Bootstrap</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Chef</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Docker</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">GCP</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Jenkins</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">JMeter</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">JMH</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Kafka</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Node.js</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Polymer</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Puppet</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">RabbitMQ</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Spring</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Vagrant</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">ZeroMQ</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Cassandra</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Elasticsearch</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Memcached</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">MongoDB</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">MySQL</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">PostgresSQL</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Redis</span></span>
-                                <span class="mdl-chip"><span class="mdl-chip__text">Solr</span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="contact" class="mdl-cell mdl-cell--12-col">
-                        <div class="kss-card-wide mdl-card">
-                            <div class="kss-card-title">
-                                <h2 class="kss-card-title-text">Contact</h2>
-                            </div>
-                            <div class="kss-card-text">
-                                <form action="//formspree.io/contact@kennedy.software"
-                                      method="POST">
-                                    <input type="email" name="_replyto" placeholder="Your email">
-                                    <input type="hidden" name="_next" value="https://kennedy.software" />
-                                    <input type="hidden" name="_subject" value="Web contact" />
-                                    <textarea name="content" rows="8" placeholder="Message"></textarea>
-                                    <input type="submit" value="Send">
-                                </form>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <footer class="kss-footer mdl-mini-footer">
-                    <div class="mdl-mini-footer__left-section">
-                        <div class="mdl-logo">&copy; Kennedy Software Solutions Inc. 2017</div>
-                        <ul class="kss-link-list mdl-mini-footer__link-list">
-                            <li><a class="list-group-item" href="#about">About</a></li>
-                            <li><a class="list-group-item" href="#services">Services</a></li>
-                            <li><a class="list-group-item" href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="mdl-mini-footer__right-section">
-                        <a class="kss-social-a" target="_blank" href="https://ca.linkedin.com/in/kennedyms"><i class="kss-social-i zmdi zmdi-linkedin zmdi-hc-2x"></i></a>
-                        <a class="kss-social-a" target="_blank" href="https://github.com/ksean"><i class="kss-social-i zmdi zmdi-github zmdi-hc-2x"></i></a>
-                        <a class="kss-social-a" target="_blank" href="https://stackoverflow.com/users/2387016/sean-kennedy"><i class="kss-social-i zmdi zmdi-stackoverflow zmdi-hc-2x"></i></a>
-                        <a class="kss-social-a" target="_blank" href="https://twitter.com/kennedytw"><i class="kss-social-i zmdi zmdi-twitter zmdi-hc-2x"></i></a>
-                    </div>
-                </footer>
-            </main>
+        gtag('js', new Date());
+
+        gtag('config', 'UA-35683139-1');
+    </script>
+
+    <title>Kennedy Software Solutions</title>
+
+    <!-- Meta declaration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Kennedy Software Solutions Inc. provides IT professional consulting services to the Greater Toronto Area">
+    <meta name="author" content="Kennedy Software Solutions Inc.">
+
+    <!-- CSS includes -->
+    <link rel="shortcut icon" type="image/png" href="favico.png">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
+
+</head>
+<body>
+<div class="kss-wrapper">
+<div class="kss-container">
+    <header class="kss-header">
+        <img alt="Kennedy Software Solutions" src="/img/logo.svg">
+    </header>
+    <main class="kss-main">
+        <div class="kss-description">
+            Kennedy Software Solutions Inc. is a leading Canadian provider of IT consulting services. Our track record of success is paved with proven and tested technologies.
         </div>
 
-        <script async src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35683139-1"></script>
-        <script>
-            var layout = document.querySelector('.mdl-layout');
-            function toggleDrawer() {
-                layout.MaterialLayout.toggleDrawer();
-            }
+        <div class="kss-banner kss-create">
+            <img class="kss-banner-image" src="/img/create.jpg">
+            <span>Bring your fresh product ideas to life.</span>
+        </div>
 
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+        <div class="kss-banner kss-extend">
+            <img class="kss-banner-image" src="/img/extend.jpg">
+            <span>Expand and integrate with an existing product.</span>
+        </div>
 
-            gtag('config', 'UA-35683139-1');
-        </script>
+        <div class="kss-banner kss-mentor">
+            <img class="kss-banner-image" src="/img/mentor.jpg">
+            <span>Apply modern best practices to a project.</span>
+        </div>
 
-    </body>
+        <div class="kss-chips">
+            <span class="chip"><span class="chip__text">C</span></span>
+            <span class="chip"><span class="chip__text">C++</span></span>
+            <span class="chip"><span class="chip__text">C#</span></span>
+            <span class="chip"><span class="chip__text">Go</span></span>
+            <span class="chip"><span class="chip__text">Java</span></span>
+            <span class="chip"><span class="chip__text">JavaScript</span></span>
+            <span class="chip"><span class="chip__text">Kotlin</span></span>
+            <span class="chip"><span class="chip__text">PHP</span></span>
+            <span class="chip"><span class="chip__text">Python</span></span>
+            <span class="chip"><span class="chip__text">Ruby</span></span>
+            <span class="chip"><span class="chip__text">Scala</span></span>
+            <span class="chip"><span class="chip__text">Shell</span></span>
+            <span class="chip"><span class="chip__text">SQL</span></span>
+            <span class="chip"><span class="chip__text">VBA</span></span>
+            <span class="chip"><span class="chip__text">AngularJS</span></span>
+            <span class="chip"><span class="chip__text">Ansible</span></span>
+            <span class="chip"><span class="chip__text">AWS</span></span>
+            <span class="chip"><span class="chip__text">Bootstrap</span></span>
+            <span class="chip"><span class="chip__text">Chef</span></span>
+            <span class="chip"><span class="chip__text">Docker</span></span>
+            <span class="chip"><span class="chip__text">GCP</span></span>
+            <span class="chip"><span class="chip__text">Jenkins</span></span>
+            <span class="chip"><span class="chip__text">JMeter</span></span>
+            <span class="chip"><span class="chip__text">JMH</span></span>
+            <span class="chip"><span class="chip__text">Kafka</span></span>
+            <span class="chip"><span class="chip__text">Node.js</span></span>
+            <span class="chip"><span class="chip__text">Polymer</span></span>
+            <span class="chip"><span class="chip__text">Puppet</span></span>
+            <span class="chip"><span class="chip__text">RabbitMQ</span></span>
+            <span class="chip"><span class="chip__text">Spring</span></span>
+            <span class="chip"><span class="chip__text">Vagrant</span></span>
+            <span class="chip"><span class="chip__text">ZeroMQ</span></span>
+            <span class="chip"><span class="chip__text">Cassandra</span></span>
+            <span class="chip"><span class="chip__text">Elasticsearch</span></span>
+            <span class="chip"><span class="chip__text">Memcached</span></span>
+            <span class="chip"><span class="chip__text">MongoDB</span></span>
+            <span class="chip"><span class="chip__text">MySQL</span></span>
+            <span class="chip"><span class="chip__text">PostgresSQL</span></span>
+            <span class="chip"><span class="chip__text">Redis</span></span>
+            <span class="chip"><span class="chip__text">Solr</span></span>
+        </div>
+        <div class="kss-contact">
+            <h2>Contact</h2>
+
+            <form action="//formspree.io/contact@kennedy.software"
+                  method="POST">
+                <input type="email" name="_replyto" placeholder="Your email">
+                <input type="hidden" name="_next" value="https://kennedy.software"/>
+                <input type="hidden" name="_subject" value="Web contact"/>
+                <textarea name="content" rows="8" placeholder="Message"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </main>
+    <footer class="kss-footer">
+        <div class="kss-social">
+            <a target="_blank" href="https://ca.linkedin.com/in/kennedyms"><i class="zmdi zmdi-linkedin zmdi-hc-2x"></i></a>
+            <a target="_blank" href="https://github.com/ksean"><i class="zmdi zmdi-github zmdi-hc-2x"></i></a>
+            <a target="_blank" href="https://stackoverflow.com/users/2387016/sean-kennedy"><i class="zmdi zmdi-stackoverflow zmdi-hc-2x"></i></a>
+            <a target="_blank" href="https://twitter.com/kennedytw"><i class="zmdi zmdi-twitter zmdi-hc-2x"></i></a>
+        </div>
+        <div class="copyright">&copy; 2017 Kennedy Software Solutions Inc.</div>
+        <div class="copyright">all rights reserved</div>
+    </footer>
+</div>
+</div>
+
+</body>
 </html>
