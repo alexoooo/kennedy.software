@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://kennedy.software</loc>
+        <image:image>
+            <image:loc>http://kennedy.software/img/create.jpg</image:loc>
+            <image:caption>Bring your fresh product ideas to life.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://kennedy.software/img/extend.jpg</image:loc>
+            <image:caption>Expand and integrate with an existing product.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>http://kennedy.software/img/mentor.jpg</image:loc>
+            <image:caption>Apply modern best practices to a project.</image:caption>
+        </image:image>
+    </url>
+</urlset>
