@@ -31,28 +31,14 @@ body {
 ol, ul {
     list-style: none;
 }
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
 /* END RESET */
 
 body, html {
     background-color: #FCFCFC;
     font-family: 'Roboto', sans-serif;
 }
-.kss-wrapper {
-    padding: 16px;
-}
 .kss-container {
+    padding: 16px;
     margin: 0 auto;
     max-width: 1024px;
     opacity: 0.8;
@@ -131,16 +117,24 @@ main ul {
 main p.last {
     padding: 12px 0;
 }
+.kss-skills {
+    text-align: center;
+}
+h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 8px 0;
+}
+.kss-skills h2 {
+    font-size: 20px;
+    color: #333;
+}
 
 /* FORM */
 .kss-contact {
     padding: 16px;
     text-align: center;
-}
-.kss-contact h2 {
-    font-size: 32px;
-    margin: 0 auto;
-    padding: 8px 0;
 }
 input[type="email"],
 textarea {
