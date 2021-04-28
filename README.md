@@ -1,4 +1,8 @@
 Kennedy Software Solutions Inc.
 ===
 
-Basic corporate website
+Static corporate website
+
+### License
+
+This software is licensed under [GNU General Public License v3.0](LICENSE)
