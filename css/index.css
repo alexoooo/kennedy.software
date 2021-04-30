@@ -106,6 +106,38 @@ main h2 {
     padding: 8px 0;
 }
 
+.kss-subtitle {
+    font-family: 'Satisfy', cursive;
+    line-height: 0.5;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 48px;
+    overflow: hidden;
+}
+.kss-subtitle span {
+    display: inline-block;
+    position: relative;
+}
+.kss-subtitle span:before,
+.kss-subtitle span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+    top: 0;
+    width: 600px;
+}
+.kss-subtitle span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.kss-subtitle span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
 main ol {
     list-style-type: decimal;
     padding: 6px 16px;
@@ -118,14 +150,9 @@ main ul {
 main p.last {
     padding: 12px 0;
 }
+
 .kss-skills {
     text-align: center;
-}
-h2 {
-    font-size: 32px;
-    text-transform: uppercase;
-    margin: 0 auto;
-    padding: 8px 0;
 }
 .kss-skills h2 {
     font-size: 20px;
@@ -133,8 +160,12 @@ h2 {
 }
 
 /* FORM */
+.kss-contact-title {
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+}
 .kss-contact {
-    padding: 16px;
+    padding: 48px 16px 16px 16px;
     text-align: center;
 }
 input[type="email"],
@@ -176,7 +207,7 @@ textarea {
 }
 .kss-social {
     text-align: center;
-    margin: 32px 0;
+    padding: 48px 16px 16px 16px;
 }
 .kss-social-icon {
     margin: 0 16px;
